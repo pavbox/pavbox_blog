@@ -1,2 +1,6 @@
-# pavbox_blog
-Contains code examples and snippets for my personal blog. Basically available on medium.com/@pavbox
+
+Имеется небольшой блог на [медиуме](medium.com/@pavbox), для которого нужно писать some code.
+
+В этом репозитории будут храниться сниппеты и куски кода к проектам.
+
+Возможно, полные демки, которые в статью не влезли.
