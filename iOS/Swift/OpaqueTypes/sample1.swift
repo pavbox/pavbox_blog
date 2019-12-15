@@ -1,8 +1,10 @@
 
 protocol AnyProtocol: Equatable { }
+
 struct MainClass: AnyProtocol { }
 
-func generate() -> AnyProtocol { // error
+// код вызывает ошибку
+func generate() -> AnyProtocol {
   return MainClass()
 }
 

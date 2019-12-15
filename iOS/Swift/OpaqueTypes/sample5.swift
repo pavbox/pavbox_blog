@@ -11,10 +11,11 @@ struct PC<T: ComputerPart, U: ComputerPart>: ComputerPart {
 let simolePart = SimplePart()
 let complexPart = ComplexPart<SimplePart, SimplePart>()
 
-//PC<ComplexPart<SimplePart, SimplePart>, SimplePart>.Type
+// возвращаемое значение функции конструктора
+// PC<ComplexPart<SimplePart, SimplePart>, SimplePart>.Type
 let personalComputer = PC(part1: complexPart, part2: part1)
 
-// use return OpaqueTypes
+// применяем Opaque Result Types
 func show() -> some ComputerPart {
   let simolePart = SimplePart()
   let complexPart = ComplexPart<SimplePart, SimplePart>()
@@ -22,5 +23,6 @@ func show() -> some ComputerPart {
   return personalComputer
 }
 
-//ComputerPart
+// возвращаемое значение функции show()
+// ComputerPart
 show()
